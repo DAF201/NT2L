@@ -1,2 +1,5 @@
+import core.test
+
+
 def main():
-    print("YES")
+    print(core.test.YES)
