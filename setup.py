@@ -18,7 +18,6 @@ setuptools.setup(
         'core',
         'config',
         'export',
-        'images',
         'service',
         'functions',],
     entry_points={
