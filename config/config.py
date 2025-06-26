@@ -16,7 +16,7 @@ def config_init() -> None:
 
 def config_update() -> None:
     """mostly for update invoice number"""
-    with open(".\\config\\config.json", "w") as config:
+    with open(f"{os.path.dirname(__file__)}\\config.json", "w") as config:
         json.dump(global_config, config)
 
 
