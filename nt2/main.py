@@ -2,8 +2,6 @@ import export.message as message
 import export.SFC_lookup as SFC
 import export.send_gr as send_gr
 import export.scan_label as scan_label
-import export.build_report as build_report
-import export.build_pod as build_pod
 import export.build_gr as build_gr
 import export.send_ITN as ITN
 import export.create_FOX_SODN as SODN
@@ -180,12 +178,12 @@ def main():
             #         print(serial_number)
             #     print()
 
-            case "9":
-                attention_need = build_pod.build_pod()
-                if attention_need is not None:
-                    message.alert("following files failed to generate POD")
-                    for file in attention_need:
-                        print(file)
+            # case "9":
+            #     attention_need = build_pod.build_pod()
+            #     if attention_need is not None:
+            #         message.alert("following files failed to generate POD")
+            #         for file in attention_need:
+            #             print(file)
 
             case _:
                 continue
