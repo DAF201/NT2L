@@ -1,0 +1,40 @@
+{
+    "Outlook": {
+        "USER": "Ye",
+        "NUM_OF_EMAILS_TO_READ": 20,
+        "NUM_OF_PODS_TO_READ": 5
+    },
+    "DN": {
+        "DN_mail_To": "danielee@nvidia.com; tifleung@nvidia.com; ranaya@nvidia.com; loanl@nvidia.com; keleiz@nvidia.com; debbiel@nvidia.com; rmicael@nvidia.com; dalin@nvidia.com;",
+        "DN_mail_CC": "nvd.bpm@FII-NA.com; SJ.Fx-Shipping@FII-NA.com;",
+        "DN_SUBJECT": "GR {} units of {} are done, GR_Number: {}, please cut DN",
+        "DN_HTML_BODY": "Hi David, Debbie, Rogelio, Ricky, Tiffany, Daniel and Kelei,<br><br>GR {} units of {} are done, GR_NUMBER: {}, please cut DN<br><br>{}<br><br>Thank you<br><br>Send From NEIS_TOOLS_2 by {}<br><br>Disclaimer: This tool was designed for ordinary units. For Complex or special units, please manually send Email and Get DN."
+    },
+    "ITN": {
+        "ITN_mail_To": "rmicael@nvidia.com; dalin@nvidia.com; debbiel@nvidia.com; keleiz@nvidia.com; loanl@nvidia.com; ranaya@nvidia.com; tifleung@nvidia.com; danielee@nvidia.com; dalin@nvidia.com; edwinw@nvidia.com; DirectShipping@nvidia.com; nturk@nvidia.com;",
+        "ITN_mail_CC": "SJ.Fx-Shipping@FII-NA.com; nvd.bpm@FII-NA.com;",
+        "ITN_SUBJECT": "ITN application for DN# {}",
+        "ITN_BODY": "Hi Mark, Scott, Nathan and Edwin,\n\nITN application for DN# {}\n\nThank You\n\nSend from NEIS_TOOLS_2 by {}\n\nDisclaimer: This tool was designed for ordinary units. For Complex or special units, please manually send Email and Get DN."
+    },
+    "Excel": {
+        "target_table": "C:\\Users\\sfcuser\\Desktop\\OneDrive - Foxconn Industrial Internet in North America\\SAP joint venture - General\\Daily Shipping Status_2025_0121.xlsx"
+    },
+    "GR": {
+        "invoice_header": "5202A5",
+        "invoice_record": 200
+    },
+    "SAP": {
+        "path": "C:\\Program Files (x86)\\SAP\\FrontEnd\\SAPgui\\saplogon.exe",
+        "client": "904",
+        "user": "14558",
+        "password": "Fox2024!!!",
+        "language": "EN"
+    },
+    "OneDrive": {
+        "path": "C:\\Users\\sfcuser\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe"
+    },
+    "SAP Shipping": {
+        "path": "C:\\Users\\sfcuser\\Desktop\\SAP SHIPPING-1.6.3.1_904\\Shipping.exe",
+        "operator_id": "1286"
+    }
+}

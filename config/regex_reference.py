@@ -1,0 +1,11 @@
+SERIAL_REGEX = r"\d{13}"
+DN_REGEX = r"\d{8}"
+WO_REFEX = r"\d{12}-\d{1}"
+MO_REGEX = r".{3}-.{5}-.{4}-.{3}"
+OCR_FXSJ_PGI_REGEX = r"PGI"
+OCR_FXSJ_PB_REGEX = r"PB-\d{5}"
+OCR_FXSJ_AMOUNT_REGEX = r"GR \d{1,9}"
+OCR_DN_REGEX = r"Delivery No \d{8}"
+OCR_PB_REGEX = r"Build Nr PB-\d{5}"
+OCR_RECIPIENT_REGEX = r'(?m)(\d+)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+([A-Z]+)\s+(\d{8})\s+(CUBE)\s+(\d+)'
+QR_REGEX = r"([^\|]+)\|([^\|]+)\|([^\|]+)(\|.*)?"
