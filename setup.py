@@ -12,6 +12,7 @@ setuptools.setup(
         "requests",
         "psutil",
         "pyperclip",
+        "uiautomation",
     ],
     packages=[
         "nt2",
