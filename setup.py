@@ -15,6 +15,7 @@ setuptools.setup(
         'psutil',
     ],
     packages=[
+        'nt2',
         'core',
         'config',
         'export',
