@@ -1,6 +1,4 @@
-# -*- coding: utf-8 -*-
 import setuptools
-
 
 setuptools.setup(
     name="nt2l",
@@ -20,7 +18,12 @@ setuptools.setup(
         "config",
         "export",
         "service",
-        "functions",],
+        "functions",
+    ],
+    include_package_data=True,
+    package_data={
+        "config": ["config.json"],
+    },
     entry_points={
         "console_scripts": [
             "nt2=nt2.main:main",

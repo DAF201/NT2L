@@ -5,12 +5,16 @@ import datetime
 global_config: dict
 system_start_time = datetime.datetime.now()
 
+config_path = os.path.join(os.path.dirname(
+    __file__), '..', 'config', 'config.json')
+config_path = os.path.abspath(config_path)
+
 
 def config_init() -> None:
     """kill all the excel process to avoid those random conflicts between Excel app and Excel COM"""
     os.system("taskkill /f /im excel.exe >nul 2>&1")
     global global_config
-    with open(".\\config\\config.json", "r") as config:
+    with open(config_path, "r") as config:
         global_config = json.load(config)
 
 
