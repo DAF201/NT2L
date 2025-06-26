@@ -11,6 +11,7 @@ setuptools.setup(
         "beautifulsoup4",
         "requests",
         "psutil",
+        "pyperclip",
     ],
     packages=[
         "nt2",
