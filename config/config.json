@@ -19,6 +19,9 @@
     "Excel": {
         "target_table": "C:\\Users\\sfcuser\\Desktop\\OneDrive - Foxconn Industrial Internet in North America\\SAP joint venture - General\\Daily Shipping Status_2025_0121.xlsx"
     },
+    "SFC": {
+        "host": "10.16.137.153"
+    },
     "GR": {
         "invoice_header": "5202A5",
         "invoice_record": 200
