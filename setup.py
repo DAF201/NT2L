@@ -25,6 +25,7 @@ setuptools.setup(
     include_package_data=True,
     package_data={
         "config": ["config.json"],
+        "nt2": ["re_lite.exe"]
     },
     entry_points={
         "console_scripts": [
