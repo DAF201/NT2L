@@ -20,7 +20,7 @@ class SAP_Shipping:
             return
         else:
             self.process = subprocess.Popen(self.path)
-            time.sleep(3)
+            time.sleep(5)
             alert_window = uiautomation.WindowControl(Name="Shipping")
             close_button = alert_window.ButtonControl(Name="OK")
             close_button.Click(simulateMove=False)

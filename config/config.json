@@ -17,7 +17,8 @@
         "ITN_BODY": "Hi Mark, Scott, Nathan and Edwin,\n\nITN application for DN# {}\n\nThank You\n\nSend from NEIS_TOOLS_2 by {}\n\nDisclaimer: This tool was designed for ordinary units. For Complex or special units, please manually send Email and Get DN."
     },
     "Excel": {
-        "target_table": "C:\\Users\\sfcuser\\Desktop\\OneDrive - Foxconn Industrial Internet in North America\\SAP joint venture - General\\Daily Shipping Status_2025_0121.xlsx"
+        "target_table_directory": "C:\\Users\\sfcuser\\Desktop\\target_table",
+        "target_table": "C:\\Users\\sfcuser\\Desktop\\target_table\\Daily Shipping Status_2025_0121.xlsx"
     },
     "SFC": {
         "host": "10.16.137.153"

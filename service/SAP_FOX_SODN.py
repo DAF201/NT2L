@@ -29,10 +29,12 @@ def create_FOX_SO_for_NV_DN(session: core.SAP_FOX.SAPSession, dn: str, shipping_
         session[core.SAP_FOX.SAPSession.id_so_sold_to_party].text = "BNV021"
         session[core.SAP_FOX.SAPSession.id_so_ship_to_party].text = shipping_code
         session[core.SAP_FOX.SAPSession.id_so_cust_refference].text = dn
-        pn_chunks = dn_data["PN#"].split("-")
+        pn_chunks = dn_data["PN#"].replace(
+            " ", "").split("-")
         session[core.SAP_FOX.SAPSession.id_so_material_number].text = f"{''.join((pn_chunks[0], pn_chunks[1]))}-{''.join((pn_chunks[2], pn_chunks[3]))}P"
         session[core.SAP_FOX.SAPSession.id_so_sale_units].text = dn_data["DN Qty"]
-        session[core.SAP_FOX.SAPSession.id_so_material_number_used_by_customer].text = dn_data["PN#"]
+        session[core.SAP_FOX.SAPSession.id_so_material_number_used_by_customer].text = dn_data["PN#"].replace(
+            " ", "")
         session[core.SAP_FOX.SAPSession.id_so_condition_amount_or_percentage].text = "10"
         functions.SAP_FOX_commands.save_page(session)
         while session.has_pop_out():
@@ -73,10 +75,10 @@ def create_FOX_SO_for_FXSJ(session: core.SAP_FOX.SAPSession, row_index: int):
         session[core.SAP_FOX.SAPSession.id_so_sold_to_party].text = "BNV021"
         session[core.SAP_FOX.SAPSession.id_so_ship_to_party].text = "SJ03"
         session[core.SAP_FOX.SAPSession.id_so_cust_refference].text = dn_data["PB#"]
-        pn_chunks = dn_data["PN#"].split("-")
+        pn_chunks = dn_data["PN#"].replace(" ", "").split("-")
         session[core.SAP_FOX.SAPSession.id_so_material_number].text = f"{''.join((pn_chunks[0], pn_chunks[1]))}-{''.join((pn_chunks[2], pn_chunks[3]))}P"
         session[core.SAP_FOX.SAPSession.id_so_sale_units].text = dn_data["DN Qty"]
-        session[core.SAP_FOX.SAPSession.id_so_material_number_used_by_customer].text = dn_data["PN#"]
+        session[core.SAP_FOX.SAPSession.id_so_material_number_used_by_customer].text = dn_data["PN#"].replace(" ", "")
         session[core.SAP_FOX.SAPSession.id_so_condition_amount_or_percentage].text = "10"
         functions.SAP_FOX_commands.save_page(session)
         while session.has_pop_out():

@@ -1,0 +1,1 @@
+cd C:\Users\sfcuser\Downloads\rclone-v1.70.2-windows-amd64 && rclone sync "onedrive:General" "C:\Users\sfcuser\Desktop\target_table"
