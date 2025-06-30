@@ -1,6 +1,6 @@
 {
     "Outlook": {
-        "USER": "Ye",
+        "USER": "SHIPPING USER",
         "NUM_OF_EMAILS_TO_READ": 20,
         "NUM_OF_PODS_TO_READ": 5
     },
@@ -24,8 +24,8 @@
         "host": "10.16.137.153"
     },
     "GR": {
-        "invoice_header": "5202A5",
-        "invoice_record": 200
+        "invoice_header": "5202A6",
+        "invoice_record": 1
     },
     "SAP": {
         "path": "C:\\Program Files (x86)\\SAP\\FrontEnd\\SAPgui\\saplogon.exe",
@@ -39,6 +39,6 @@
     },
     "SAP Shipping": {
         "path": "C:\\Users\\sfcuser\\Desktop\\SAP SHIPPING-1.6.3.1_904\\Shipping.exe",
-        "operator_id": "1286"
+        "operator_id": "0000"
     }
 }

@@ -11,6 +11,8 @@ setuptools.setup(
         "beautifulsoup4",
         "requests",
         "psutil",
+        "pyperclip",
+        "uiautomation",
     ],
     packages=[
         "nt2",
