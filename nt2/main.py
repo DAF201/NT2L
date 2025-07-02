@@ -116,7 +116,7 @@ def main():
                             "please enter the shipping code (default SJ03 to Zanker press 'Enter')")
                         shipping_code = input()
                         if shipping_code == "":
-                            shipping_code == "SJ03"
+                            shipping_code = "SJ03"
                         so, dn = SODN.create_FOX_SODN(data, shipping_code)
                         message.message(
                             f"FXSO and FXDN created for NVDN: {data}\n{so}\n{dn}")

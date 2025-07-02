@@ -21,6 +21,7 @@ def create_FOX_SO_for_NV_DN(session: core.SAP_FOX.SAPSession, dn: str, shipping_
     # search for data
     target_table = functions.target_table.target_table()
     dn_data = target_table.search_dn_for_info(dn)
+    target_table.quit()
 
     # if data found
     if dn_data != {}:
@@ -70,6 +71,7 @@ def create_FOX_SO_for_FXSJ(session: core.SAP_FOX.SAPSession, row_index: int):
 
     target_table = functions.target_table.target_table()
     dn_data = target_table.search_row_for_info(row_index)
+    target_table.quit()
 
     if dn_data != {}:
         session[core.SAP_FOX.SAPSession.id_so_sold_to_party].text = "BNV021"

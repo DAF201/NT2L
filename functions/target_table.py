@@ -3,10 +3,12 @@ import config.config
 import time
 import os
 import sysconfig
-
+import glob
 
 class target_table(core.EXCEL.Excel):
     def __init__(self, visible=False) -> None:
+        for file in glob.glob(config.config.global_config["Excel"]["target_table_directory"]+"\\*.*"):
+            os.remove(file)
         os.system(
             f"start {sysconfig.get_paths()["purelib"]}\\nt2\\rc_lite.exe sync \"py:General\" \"{config.config.global_config["Excel"]["target_table_directory"]}\"")
         time.sleep(5)

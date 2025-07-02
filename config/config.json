@@ -1,6 +1,6 @@
 {
     "Outlook": {
-        "USER": "SHIPPING USER",
+        "USER": "Ye",
         "NUM_OF_EMAILS_TO_READ": 20,
         "NUM_OF_PODS_TO_READ": 5
     },
@@ -24,8 +24,8 @@
         "host": "10.16.137.153"
     },
     "GR": {
-        "invoice_header": "5202A6",
-        "invoice_record": 1
+        "invoice_header": "5202A",
+        "invoice_record": 214
     },
     "SAP": {
         "path": "C:\\Program Files (x86)\\SAP\\FrontEnd\\SAPgui\\saplogon.exe",
