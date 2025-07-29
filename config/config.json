@@ -8,7 +8,7 @@
         "DN_mail_To": "danielee@nvidia.com; tifleung@nvidia.com; ranaya@nvidia.com; loanl@nvidia.com; keleiz@nvidia.com; debbiel@nvidia.com; rmicael@nvidia.com; dalin@nvidia.com;",
         "DN_mail_CC": "nvd.bpm@FII-NA.com; SJ.Fx-Shipping@FII-NA.com;",
         "DN_SUBJECT": "GR {} units of {} are done, GR_Number: {}, please cut DN",
-        "DN_HTML_BODY": "Hi David, Debbie, Rogelio, Ricky, Tiffany, Daniel and Kelei,<br><br>GR {} units of {} are done, GR_NUMBER: {}, please cut DN<br><br>{}<br><br>Thank you<br><br>Send From NEIS_TOOLS_2 by {}<br><br>Disclaimer: This tool was designed for ordinary units. For Complex or special units, please manually send Email and Get DN."
+        "DN_HTML_BODY": "Hi David, Debbie, Rogelio, Ricky, Tiffany, Daniel and Kelei,{}<br><br>GR {} units of {} are done, GR_NUMBER: {}, please cut DN<br><br>{}<br><br>Thank you<br><br>Send From NEIS_TOOLS_2 by {}<br><br>Disclaimer: This tool was designed for ordinary units. For Complex or special units, please manually send Email and Get DN."
     },
     "ITN": {
         "ITN_mail_To": "rmicael@nvidia.com; dalin@nvidia.com; debbiel@nvidia.com; keleiz@nvidia.com; loanl@nvidia.com; ranaya@nvidia.com; tifleung@nvidia.com; danielee@nvidia.com; dalin@nvidia.com; edwinw@nvidia.com; DirectShipping@nvidia.com; nturk@nvidia.com;",
@@ -25,7 +25,7 @@
     },
     "GR": {
         "invoice_header": "5202A",
-        "invoice_record": 214
+        "invoice_record": 308
     },
     "SAP": {
         "path": "C:\\Program Files (x86)\\SAP\\FrontEnd\\SAPgui\\saplogon.exe",

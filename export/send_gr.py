@@ -26,14 +26,21 @@ def send_gr() -> None:
     subject = str(config.config.global_config["DN"]["DN_SUBJECT"]).format(
         amount, pb, invoice)
 
-    to = config.config.global_config["DN"]["DN_mail_To"]
-    cc = config.config.global_config["DN"]["DN_mail_CC"]
+    to = "fangzhou.ye@fii-na.com"
+    cc = "fangzhou.ye@fii-na.com"
+    # to = config.config.global_config["DN"]["DN_mail_To"]
+    # cc = config.config.global_config["DN"]["DN_mail_CC"]
 
     html_table = service.email_build.build_html_table(
         service.email_build.get_sn_and_status(gr_excel_workbook))
 
+    print("Please enter note to NV PM, press 'ENTER' when finished")
+    note = input()
+    if note != "":
+        note = "<br><br>NOTE: " + note
+
     html_body = str(config.config.global_config["DN"]["DN_HTML_BODY"]).format(
-        amount, pb, invoice, html_table, config.config.global_config["Outlook"]["USER"])
+        note, amount, pb, invoice, html_table, config.config.global_config["Outlook"]["USER"])
 
     core.OUTLOOK.global_outlook_app.send_email(
         subject=subject, to=to, cc=cc, HTMLBody=html_body, attachments=attachment)
