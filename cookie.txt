@@ -1,0 +1,5 @@
+# Netscape HTTP Cookie File
+# Domain	Path	Secure	Expires	Name	Value
+
+fiicorp.sharepoint.com	/	TRUE		FedAuth	
+fiicorp.sharepoint.com	TRUE	/	TRUE		rtFa	
