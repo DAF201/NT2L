@@ -7,10 +7,12 @@ import glob
 
 class target_table(core.EXCEL.Excel):
     def __init__(self, visible=False) -> None:
-        for file in glob.glob(config.config.global_config["Excel"]["target_table_directory"]+"\\*.*"):
+        for file in glob.glob(config.config.global_config["Excel"]["target_table_directory"]+"\\*.xlsx"):
             os.remove(file)
-        os.system(
-            f"start {sysconfig.get_paths()["purelib"]}\\nt2\\rc_lite.exe sync \"py:General\" \"{config.config.global_config["Excel"]["target_table_directory"]}\"")
+        # os.system(
+        #     f"start {sysconfig.get_paths()["purelib"]}\\nt2\\rc_lite.exe sync \"py:General\" \"{config.config.global_config["Excel"]["target_table_directory"]}\"")
+
+        os.system("""curl -L -o "Daily Shipping Status_2025_0121.xlsx" -b cookies.txt "https://fiicorp.sharepoint.com/sites/SAP.joint/_layouts/15/download.aspx?UniqueId=" """)
         time.sleep(5)
         super().__init__(visible)
         self.open()
