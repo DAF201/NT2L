@@ -6,7 +6,7 @@ def destination_convert(dest: str) -> str:
 
     dest_map = {"sc": "USA", "hk": "HONGKONG",
                 "india": "INDIA", "dallas": "USA", "tw": "Taiwan", "or": "USA",
-                "china": "CHINA", "israel": "Israel"}
+                "china": "CHINA", "israel": "Israel","cn":"CHINA"}
     if dest in dest_map.keys():
         return dest_map[dest]
     else:

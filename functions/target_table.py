@@ -5,15 +5,22 @@ import os
 import sysconfig
 import glob
 
+
 class target_table(core.EXCEL.Excel):
     def __init__(self, visible=False) -> None:
-        for file in glob.glob(config.config.global_config["Excel"]["target_table_directory"]+"\\*.xlsx"):
-            os.remove(file)
+
+        if (os.path.exists(config.config.global_config["Excel"]["target_table_directory"]+"Daily Shipping Status_2025_0121.xlsx")):
+            if (time.time()-os.path.getmtime(config.config.global_config["Excel"]["target_table_directory"]+"Daily Shipping Status_2025_0121.xlsx")>1800):
+                for file in glob.glob(config.config.global_config["Excel"]["target_table_directory"]+"\\*.xlsx"):
+                    os.remove(file)
+                os.system(r'''cd C:\Users\sfcuser\Downloads && curl -L -o "Daily Shipping Status_2025_0121.xlsx" -b cookies.txt "https://fiicorp.sharepoint.com/sites/SAP.joint/_layouts/15/download.aspx?UniqueId=5101c06c%2D1ad9%2D4054%2D941e%2D9a29fe97b0c5" ''')
+        else:
+            for file in glob.glob(config.config.global_config["Excel"]["target_table_directory"]+"\\*.xlsx"):
+                os.remove(file)
+            os.system(r'''cd C:\Users\sfcuser\Downloads && curl -L -o "Daily Shipping Status_2025_0121.xlsx" -b cookies.txt "https://fiicorp.sharepoint.com/sites/SAP.joint/_layouts/15/download.aspx?UniqueId=5101c06c%2D1ad9%2D4054%2D941e%2D9a29fe97b0c5" ''')
         # os.system(
         #     f"start {sysconfig.get_paths()["purelib"]}\\nt2\\rc_lite.exe sync \"py:General\" \"{config.config.global_config["Excel"]["target_table_directory"]}\"")
 
-        os.system("""curl -L -o "Daily Shipping Status_2025_0121.xlsx" -b cookies.txt "https://fiicorp.sharepoint.com/sites/SAP.joint/_layouts/15/download.aspx?UniqueId=" """)
-        time.sleep(5)
         super().__init__(visible)
         self.open()
 
